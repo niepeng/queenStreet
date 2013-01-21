@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">后街</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    
+    <string name="app_btn_label_ok">确定</string>
+	<string name="app_btn_label_canel">取消</string>
+	<string name="app_label_notify">提醒</string>
+	<string name="app_label_opt">操作</string>
+	<string name="app_msg_leave">当前数据没有保存，确定要离开？</string>
+	<string name="app_label_conect_network_fail">连接网络失败。</string>
+	<string name="app_label_exit">再按一次退出应用程序</string>
+	<string name="app_label_back">后退</string>
+	<string name="app_read_data">"数据读取中，请稍候..."</string>
+	<string name="app_up_data">数据处理中，请稍候...</string>
+    <string name="update_client_sd_no_space_msg">对不起，无法下载到你的SD卡，请确保SD卡有用的空间。</string>
+    
+	
+
+</resources>
