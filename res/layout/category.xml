@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical" android:layout_width="fill_parent"
-	android:layout_height="fill_parent" android:background="#f4f1e2"
-	android:id="@+id/hot_thread_list_main_frame">
+    android:id="@+id/hot_thread_list_main_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f1e2"
+    android:orientation="vertical" >
 
-	<LinearLayout android:orientation="vertical"
-		android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
-		<!-- 标题栏 -->
-		<RelativeLayout android:orientation="horizontal"
-			android:layout_width="fill_parent" android:layout_height="46dip"
-			android:background="@color/blue_light">
+        <!-- 标题栏 -->
 
-			<!-- 标题 -->
-			<TextView  android:text="分类"
-				style="@style/app_title_wrap" android:layout_centerInParent="true" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:background="@color/blue_light"
+            android:orientation="horizontal" >
 
-			<!-- 发帖按钮  -->
-			<!-- <Button android:id="@+id/hot_thread_list_publish"
+            <!-- 标题 -->
+
+            <TextView
+                style="@style/app_title_wrap"
+                android:layout_centerInParent="true"
+                android:text="分类" />
+
+            <!-- 发帖按钮 -->
+            <!--
+                 <Button android:id="@+id/hot_thread_list_publish"
 				android:background="@drawable/transparent_button_background"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_alignParentRight="true"
@@ -26,31 +37,38 @@
 				android:textColor="@color/white"
 				android:paddingRight="15dip" android:paddingLeft="15dip"
 				android:layout_marginTop="6dip" android:layout_marginBottom="6dip"
-				android:layout_marginRight="10dip" /> -->
+				android:layout_marginRight="10dip" />
+            -->
 
-		</RelativeLayout>
+        </RelativeLayout>
 
+        <RelativeLayout
+            android:id="@+id/news_list_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f1e2"
+            android:orientation="vertical" >
 
-		<RelativeLayout android:orientation="vertical"
-			android:layout_width="fill_parent" android:layout_height="wrap_content"
-			android:background="#f4f1e2" android:id="@+id/news_list_linear_layout">
+            <!-- 展示热帖列表 -->
 
-			<!--  展示热帖列表  -->
-			<ListView
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_marginTop="6dip" android:fastScrollEnabled="false"
-				android:cacheColorHint="#f4f1e2" android:id="@+id/item_list_view_images" />
+            <ListView
+                android:id="@+id/item_list_view_images"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:cacheColorHint="#f4f1e2"
+                android:fastScrollEnabled="false" />
+        </RelativeLayout>
 
-		</RelativeLayout>
-
-		<TextView android:id="@+id/hot_thread_list_no_items"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:textColor="#413934" android:textSize="15dip"
-			android:text="haahhahah"
-			android:layout_marginLeft="20dip" android:layout_marginRight="20dip" />
-			
-	</LinearLayout>
-
+        <TextView
+            android:id="@+id/hot_thread_list_no_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="haahhahah"
+            android:textColor="#413934"
+            android:textSize="15dip" />
+    </LinearLayout>
 
 </LinearLayout>
-
